@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    background-image: url(../img/bg8.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 40%;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    word-spacing: 60px;
+    align-items: center;
+    z-index: 100px;
+}
+.navbar a{
+    position: relative;
+    font-size: 20px;
+    color: rgb(252, 206, 237);
+    text-shadow: rgb(189, 79, 149) 1px 2px 1px;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+.navbar a::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: rgb(237, 131, 205);
+    transition: .3s;
+}
+.navbar a:hover:before{
+    width: 100%;
+}
+.about{
+    width: 100%;
+    padding: 100px 600px;
+}
+.about img{
+    height: auto;
+    width: 350px;
+
+}
+.about-text{
+    width: 800px;
+}
+.img{
+    position: absolute;
+    width: 450px;
+    right: 65%;
+    height: 400px;
+    top: 200px;
+    border-radius: 25%;
+    border: 5px solid rgb(213, 64, 174);
+}
+.about-text h2{
+    color: rgb(255, 3, 188);
+    text-shadow: rgb(189, 79, 149) 1px 2px 1px;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.about-text p{
+    font-family: "Poppins",sans-serif;
+    color: #fcfc;
+    background-color: rgba(226, 43, 174, 0.344);
+    font-size: 18px;
+    border-radius: 20px;
+    line-height: 28px;
+    padding: 30px;
+}
+.hob{
+    margin-left: 10px;
+    padding-top: 2px;
+    font-size: 40px;
+    color: rgb(255, 3, 188);
+    text-shadow: rgb(189, 79, 149) 1px 2px 1px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.hobbies img{
+    padding: 40px;
+    height: 400px;
+    margin-left: 80px;
+    align-items: center;
+}
+.hobbies span{
+    font-size: 25px;
+    color: rgb(252, 189, 222);
+    text-shadow: black 1px 2px 1px;
+    padding-left: 200px;
+    padding-right: 20px;
+}
